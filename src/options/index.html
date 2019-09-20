@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+        <title>百度百科搜索插件设置</title>
+        <link rel="stylesheet" href="https://cdn.bootcss.com/milligram/1.3.0/milligram.min.css">
+        <link rel="stylesheet" href="options.css">
+    </head>
+    <body>
+
+        <div class="title">
+            <h3 class="title">百度百科搜索插件</h3>
+            <small class="heading-font-size" id="version">Version 1</small>
+        </div>
+
+        <form class="card">
+            <h4>设置</h4>
+            <fieldset>
+                <input type="checkbox" id="enabled">
+                <label for="enabled">启用</label>
+                <br/>
+                <input type="checkbox" id="dark">
+                <label for="dark">暗色主题</label>
+                <br/>
+                <input type="checkbox" id="auto_show">
+                <label for="auto_show">划选文字显示摘要</label>
+                <br/>
+                <input type="checkbox" id="ctrlRequired" class="sub-setting">
+                <label for="ctrlRequired">按住Ctrl键时才生效</label>
+                <br/>
+                <p id="status"></p>
+                <a class="button" id="save" href="#">保存</a>
+            </fieldset>
+        </form>
+
+        <div class="card">
+            <h4>关于</h4>
+            <p>通过划选网页文字显示百度百科的摘要信息</p>
+            <p><a href="https://gitlab.com/bitspice/qikipedia" target="_blank">博客链接</a></p>
+        </div>
+
+        <script src="../inject/options.js"></script>
+        <script src="options.js"></script>
+
+    </body>
+</html>

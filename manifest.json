@@ -1,0 +1,53 @@
+{
+  "name": "百度百科搜索",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "选中一段文字，显示百度百科摘要信息",
+  "homepage_url": "https://gitlab.com/bitspice/qikipedia",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "default_locale": "zh",
+  "options_page": "src/options/index.html",
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "contextMenus",
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "scripts": [
+      "src/inject/options.js",
+      "src/inject/background.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "js": [
+        "src/inject/options.js",
+        "src/inject/inject.js",
+        "src/inject/card.js",
+        "js/mustache.min.js"
+      ],
+      "css": [
+        "css/card.css"
+      ]
+    }
+  ]
+}

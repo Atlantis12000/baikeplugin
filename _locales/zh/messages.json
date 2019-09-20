@@ -1,0 +1,17 @@
+{
+  "enabled": {
+    "message": "百度百科搜索插件已被启用"
+  },
+  "disabled": {
+    "message": "百度百科搜索插件已被禁用"
+  },
+  "readMore": {
+    "message": "阅读更多"
+  },
+  "showSummary": {
+    "message": "显示百度百科摘要"
+  },
+   "unRecord": {
+    "message": "百度百科尚未收录该词条"
+  }
+}

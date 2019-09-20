@@ -1,0 +1,47 @@
+body {
+    background: #ecf0f1;
+}
+
+label, legend {
+    display: inline-block;
+}
+
+a {
+    color: #59ABE3;
+}
+
+.title {
+    text-align: center;
+    font-weight: 400;
+}
+
+.title > h3 {
+    margin-bottom: -5px;
+    color: #59ABE3;
+}
+
+.card {
+    max-width: 400px;
+    margin: 10px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+    padding: 20px;
+}
+
+.card > h4 {
+    font-weight: 400;
+}
+
+.button {
+    background-color: #59ABE3;
+    border: 0.1rem solid #59ABE3;
+}
+
+#status {
+    color: #36D7B7;
+}
+
+.sub-setting {
+    margin-left: 2rem;
+}
