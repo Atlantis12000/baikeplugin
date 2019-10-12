@@ -4,6 +4,7 @@
   "manifest_version": 2,
   "description": "选中一段文字，显示百度百科摘要信息",
   "homepage_url": "https://blog.csdn.net/magicpapacy/article/details/101064608",
+  "update_url": "http://upext.chrome.360.cn/intf.php?method=ExtUpdate.query",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
